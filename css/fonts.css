@@ -21,6 +21,9 @@ footer,header,hgroup,menu,nav,section {
 .f-black {
   color: #000;
 }
+.f-red {
+  color: rgb(241, 57, 57);
+}
 
 .s5 {
   font-size: 5px;
