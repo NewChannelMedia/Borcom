@@ -103,7 +103,7 @@ $( document ).ready( function () {
   $( ".f-med" ).fontface( {
     fontName: "Futura",
     fileName: "hinted-Futura",
-    fontWeight: "500",
+    /*fontWeight: "500",*/
     fontStyle: "normal"
   } );
 

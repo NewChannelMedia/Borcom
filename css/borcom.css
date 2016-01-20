@@ -1,10 +1,224 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  #homeHeader {
+    height: 400px;
+  }
+  #homeUbicacionMap {
+    height: 300px;
+  }
+  #homeContacto {
+    height: 300px;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #homeHeader {
+    height: 400px;
+  }
+  #homeWelcome, #homeColumns, #homeMarcas {
+    height: 100%;
+    padding: 20px 0;
+  }
+  #homeUbicacionHeader {
+    height: 150px;
+  }
+  #homeUbicacionMap{
+    height: 350px;
+  }
+  #homeContacto {
+    height: 300px;
+  }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #homeHeader {
+    height: 500px;
+  }
+  #homeWelcome, #homeColumns, #homeMarcas {
+    height: 100%;
+    padding: 20px 0;
+  }
+  #homeUbicacionHeader {
+    height: 200px;
+  }
+  #homeUbicacionMap {
+    height: 400px
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #homeHeader {
+    height: 700px;
+  }
+  #homeWelcome {
+    height: 580px;
+  }
+  #homeColumns {
+    height: 645px;
+  }
+  #homeMarcas {
+    height: 600px;
+  }
+  #homeUbicacionHeader{
+    height: 230px;
+  }
+  #homeContacto {
+    height: 300px;
+  }
+}
+
+#homeHeader {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url('../img/jumbotron-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#homeWelcome {
+  position: relative;
+}
+#homeWelcome p {
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+#homeColumns {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #2d2d2d;
+}
+#homeColumns .thumbnail {
+  margin: 0;
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+}
+#homeColumns .thumbnail .caption {
+  margin-top: 7px;
+  padding: 10px 0;
+}
+#homeColumns .thumbnail .caption p {
+  line-height: 1.2;
+  padding: 5px 0;
+}
+
+#thmb1 .caption{
+  border-top: solid 8px #e42629;
+}
+#thmb2 .caption {
+  border-top: solid 8px #00c6ff;
+}
+#thmb3 .caption{
+  border-top: solid 8px #ffea00;
+}
+
+#homeMarcas {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url('../img/marcas-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.homeBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.marcasHeader {
+  height: 160px;
+}
+.logosContainer {
+  height: 220px;
+}
+
+#homeUbicacionHeader {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #2d2d2d;
+}
+
+#homeContacto {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #09426b;
+}
+
+/*.font {
+  font-family: cursive;
+  font-size: 20;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: red;
+}*/
+
+.text-white {
+  color: #ffffff!important;
+}
+.txt-grey {
+  color: #b1b1b1!important;
+}
+.text-black {
+  color: #000000!important;
+}
+.text-dark {
+  color: #2d2d2d!important;
+}
+.text-dark2 {
+  color: #5a5a5a!important;
+}
+.text-dark3 {
+  color: #565656!important;
+}
+.text-red {
+  color: #e42629!important;
+}
+.text-red2 {
+  color: #891315!important;
+}
+.text-blue {
+  color: #00c6ff!important;
+}
+.text-blue2 {
+  color: #09426b!important;
+}
+.text-yellow {
+  color: #ffea00!important;
+}
+.bg-white{
+  background-color: #ffffff!important;
+}
+.bg-black{
+  background-color: #000000!important;
+}
+.bg-red{
+  background-color: #e42629!important;
+}
+.bg
+
+
 #nav{
   height: 120px;
   background-color: #ffffff;
 }
 
 .logo {
-  height: 120px;
+  max-width: 225px;
 }
 
 .jumbotron {

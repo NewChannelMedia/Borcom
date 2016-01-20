@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Borcom</title>
+    <title>BorCom</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/borcom.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/BorCom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-fixed-top">
+    <nav id="nav" class="navbar">
       <div class="container center-container">
         <div class="center-content row">
           <div class="col-lg-6">
@@ -38,26 +38,34 @@
       </div>
     </nav>
 
-    <header class="jumbotron">
+    <header id="homeHeader">
       <div class="center-container">
-        <div class="center-content text-center">
-          <h1>El bordado hecho perfección.</h1>
+        <div class="center-content">
+          <div class="container-fluid">
+            <p class="f-med s50 text-center text-white">El bordado hecho perfección.</p>
+          </div>
         </div>
       </div>
     </header>
-    <section class="container-fluid" style="height:500px;">
-      <div class="center-container row">
-        <div class="center-content col-lg-12">
-          <div class="container">
+    <section id="homeWelcome">
+      <div class="center-container">
+        <div class="center-content">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
-                <h1 class="text-center">¡Bienvenido!</h1>
-                <h2 class="text-center">Somos una empresa con 30 años de experiencia en los
-                  <br>servicios de bordados y etiquetas tejidas.</h2>
-                <h2 class="text-center text-uppercase f-red">¡Ven y conocenos, seguro te quedaras con nosotros!</h2>
-                <p class="text-center">
+              <div class="col-lg-12">
+                <p class="f-med s85 text-uppercase text-center text-black">
+                  <span>¡BIENVENIDO!</span>
+                </p>
+                <p class="f-book s35 text-center ls1 text-dark2">
+                  <span>Somos una empresa con 30 años de experiencia en los
+                  <br>servicios de bordados y etiquetas tejidas.</span>
+                </p>
+                <p class="f-med s25 text-uppercase text-center text-red">
+                  <span>¡Ven y conocenos, seguro te quedaras con nosotros!</span>
+                </p>
+                <p class="f-book s20 text-center ls1 text-dark3">
                   Si fabricas ropa, uniformes o calzado en cualquier escala, eres publicista o tienes un colegio, ¡visitanos!
-                  <br>No importa si tu proyecto es de una o de un millon de piezas, en Borcom
+                  <br>No importa si tu proyecto es de una o de un millon de piezas, en BorCom
                   <br>contarás con la mejor calidad, servicio y atención del mercado, listos para dar solución a tus necesidades.
                 </p>
               </div>
@@ -66,94 +74,206 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid">
-      <div class="center-container row">
+    <section id="homeColumns">
+      <div class="center-container">
         <div class="center-content">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="thumbnail">
-              <img class="img-resposive center-block" width="100%" src="http://lorempixel.com/image_output/business-q-c-781-480-7.jpg">
-              <div class="caption">
-                <h3>Personal<br><span>Capacitado</span></h3>
-                <h3 class="text-uppercase"><small>Un servicio de profesionales a tu servicio.</small></h3>
-                <p>
-                  En borcom encontraras al mejor equipo de especialistas en bordados digitales completamente a tu disposicion y listos para dar solucion a tu proyecto.
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="thumbnail" id="thmb1">
+                  <img class="img-resposive center-block" width="100%" src="img/personal_capacitado.png">
+                  <div class="caption">
+                    <p class="f-book s35">
+                      <span class="text-white">Personal</span><br><span class="text-red">Capacitado</span>
+                    </p>
+                    <p class="f-book s20">
+                      <span class="text-uppercase text-white">Un equipo de profesionales<br>a tu servicio.</span>
+                    </p>
+                    <p class="f-book s15 lh1">
+                      <span class="ls1 txt-grey">En BorCom encontraras al mejor equipo de especialistas en bordados digitales completamente a tu disposicion y listos para dar solucion a tu proyecto.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="thumbnail" id="thmb2">
+                  <img class="img-resposive center-block" width="100%" src="img/calidad_incomparable.png">
+                  <div class="caption">
+                    <p class="f-book s35">
+                      <span class="text-white">Calidad</span><br><span class="text-blue">Incomparable</span>
+                    </p>
+                    <p class="f-book s20">
+                      <span class="text-uppercase text-white">30 años de experiencia<br>nos respaldan.</span>
+                    </p>
+                    <p class="f-book s15 lh1">
+                      <span class="ls1 txt-grey">En BorCom encontraras al mejor equipo de especialistas en bordados digitales completamente a tu disposicion y listos para dar solucion a tu proyecto.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="thumbnail" id="thmb3">
+                  <img class="img-resposive center-block" width="100%" src="img/servicios_productos.png">
+                  <div class="caption">
+                    <p class="f-book s35">
+                      <span class="text-white">Servicios</span><br><span class="text-yellow">&amp; Productos</span>
+                    </p>
+                    <p class="f-book s20">
+                      <span class="text-uppercase text-white">Tambien somos<br>distribuidores</span>
+                    </p>
+                    <p class="f-book s15 lh1">
+                      <span class="ls1 txt-grey">En BorCom encontraras al mejor equipo de especialistas en bordados digitales completamente a tu disposicion y listos para dar solucion a tu proyecto.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="homeMarcas">
+      <div class="homeBg"></div>
+      <div class="marcasHeader">
+        <div class="center-container">
+          <div class="center-content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="f-book s35 text-center ls2 lh2 text-uppercase text-black">
+                    Algunas marcas con las que hemos trabajado
+                  </p>
+                  <p class="f-book s20 text-center text-black">
+                    A lo largo de nuestra historia hemos trabajado con algunas de las marcas mas reconocidas de la inductria de la confección.<br>
+                    Hoy en día contamos con 210 cabezas de bordado a tu servicio, así como telares de alta tecnología para la fabricación de etiquetas, cintas y pulseras.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/nike.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/cocacola.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/dupont.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/levis.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/ford.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/abercombie.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/hollister.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 logosContainer">
+            <div class="center-container">
+              <div class="center-content">
+                <img src="img/marcas/chrysler.png" class="img-responsive center-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="homeUbicacionHeader">
+      <div class="center-container">
+        <div class="center-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="f-book s60 text-center ls1 text-uppercase text-white">
+                ubicación y contacto
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="thumbnail">
-              <img class="img-resposive center-block" width="100%" src="http://lorempixel.com/image_output/business-q-c-781-480-7.jpg">
-              <div class="caption">
-                <h3>Calidad<br><span>Incomparable</span></h3>
-                <h3 class="text-uppercase"><small>30 años de experiencia nos respaldan.</small></h3>
-                <p>
-                  En borcom encontraras al mejor equipo de especialistas en bordados digitales completamente a tu disposicion y listos para dar solucion a tu proyecto.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="thumbnail">
-              <img class="img-resposive center-block" width="100%" src="http://lorempixel.com/image_output/business-q-c-781-480-7.jpg">
-              <div class="caption">
-                <h3>Servicios<br><span>&amp; Productos</span></h3>
-                <h3 class="text-uppercase"><small>Tambien somos distribuidores</small></h3>
-                <p>
-                  En borcom encontraras al mejor equipo de especialistas en bordados digitales completamente a tu disposicion y listos para dar solucion a tu proyecto.
-                </p>
+            <div class="row">
+              <div class="col-lg-4 col-lg-offset-4">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img class="img-responsive center-block" src="img/mapmarker.png">
+                  </div>
+                  <div class="col-lg-9">
+                    <p class="f-book s15 lh1 text-white">
+                      Calle Volcán Cofre de Perote # 5766
+                      <br>El Coli Urbano.
+                      <br>C.P. 45067
+                      <br>Zapopan, Jalisco. MX.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>hellow</h1>
-              </div>
-            </div>
-          </div>
+    <section id="homeUbicacionMap">
+      <div class="center-container">
+        <div class="center-content">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.0367879464072!2d-103.41800341098265!3d20.643942619835634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4acc53eccbfa926d!2sBORCOM!5e0!3m2!1ses!2smx!4v1453249709767" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </section>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="container">
+    <section id="homeContacto">
+      <div class="center-container">
+        <div class="center-content">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-md-12">
-                <h1>hellow</h1>
+              <div class="col-lg-6 block1">
+
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>hellow</h1>
+              <div class="col-lg-6 block1">
+
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>hellow</h1>
+              <div class="col-lg-6 block2">
+
+              </div>
+              <div class="col-lg-6 block2">
+
               </div>
             </div>
           </div>
@@ -178,5 +298,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="fonts/fonts.js"></script>
+
   </body>
 </html>
