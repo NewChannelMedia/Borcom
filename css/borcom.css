@@ -1,3 +1,9 @@
+section {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
   #homeHeader {
@@ -7,7 +13,7 @@
     height: 300px;
   }
   #homeContacto {
-    height: 300px;
+    min-height: 300px;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -26,7 +32,7 @@
     height: 350px;
   }
   #homeContacto {
-    height: 300px;
+    min-height: 300px;
   }
  }
 
@@ -70,9 +76,6 @@
 }
 
 #homeHeader {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
   background-image: url('../img/jumbotron-bg.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -80,7 +83,6 @@
 }
 
 #homeWelcome {
-  position: relative;
 }
 #homeWelcome p {
   margin: 0 auto;
@@ -88,9 +90,6 @@
 }
 
 #homeColumns {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
   background-color: #2d2d2d;
 }
 #homeColumns .thumbnail {
@@ -119,15 +118,12 @@
 }
 
 #homeMarcas {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
   background-image: url('../img/marcas-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.homeBg {
+.marcasBg {
   position: absolute;
   top: 0;
   right: 0;
@@ -144,17 +140,66 @@
 }
 
 #homeUbicacionHeader {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
   background-color: #2d2d2d;
 }
 
 #homeContacto {
+  background-color: #09426b;
+}
+
+#historia {
+  height: 520px;
+  background-color: #fff;
+  background-image: url('../img/historia-bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border-top: solid 2px #000;
+}
+
+#historia .header {
+  border-bottom: solid 4px #e42629;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#tecnologia {
+  height:450px;
+  background-image: url('../img/tecnologia-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tecnologiaBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(161, 18, 19, .8);
+}
+
+#footer {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  background-color: #09426b;
+  background-color: #2d2d2d;
+  height: 100px;
+}
+
+
+.block1{
+  height: 120px;
+}
+.block2 {
+  height: 180px;
+}
+.block2.block2bg {
+  background-image: url('../img/block2bg.png');
+}
+
+.block1 p, .block2 p {
+  margin: 0;
+  line-height: 1.3;
 }
 
 /*.font {
@@ -185,6 +230,9 @@
 .text-dark3 {
   color: #565656!important;
 }
+.text-dark4 {
+  color: #434343!important;
+}
 .text-red {
   color: #e42629!important;
 }
@@ -200,21 +248,47 @@
 .text-yellow {
   color: #ffea00!important;
 }
-.bg-white{
+
+.bg-white {
   background-color: #ffffff!important;
 }
-.bg-black{
+.bg-grey {
+  background-color: #b1b1b1!important;
+}
+.bg-black {
   background-color: #000000!important;
 }
-.bg-red{
+.bg-dark {
+  background-color: #2d2d2d!important;
+}
+.bg-dark2 {
+  background-color: #5a5a5a!important;
+}
+.bg-dark3 {
+  background-color: #565656!important;
+}
+.bg-red {
   background-color: #e42629!important;
 }
-.bg
+.bg-red2 {
+  background-color: #891315!important;
+}
+.bg-blue {
+  background-color: #00c6ff!important;
+}
+.bg-blue2 {
+  background-color: #09426b!important;
+}
+.bg-yellow {
+  background-color: #ffea00!important;
+}
 
 
 #nav{
   height: 120px;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
