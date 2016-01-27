@@ -34,6 +34,11 @@ section {
   #historia {
     background-image: none!important;
   }
+  section {
+    padding-top: 25px!important;
+    padding-bottom: 25px!important;
+    height: auto!important;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -99,6 +104,10 @@ section {
   }
 }
 
+.mobile {
+  padding-top: 120px;
+}
+
 #nav {
   height: 120px;
   margin: 0;
@@ -124,6 +133,10 @@ section {
   border: 0;
 }
 
+#nav li>a{
+  padding: 10px;
+}
+
 #nav .navbar-collapse.collapse, #nav .navbar-collapse.collapsing {
   background-color: #ffffff;
   text-align: center;
@@ -134,10 +147,27 @@ section {
   height: auto!important;
 }
 
+#nav .navbar-toggle:focus,
+#nav .navbar-toggle:hover {
+  background-color: transparent;
+}
+#nav .navbar-toggle {
+  border:none;
+}
+
 #nav .navbar-nav>.active>a,
 #nav .navbar-nav>.active>a:focus {
   background-color: #ffffff;
   color: #000;
+}
+@media (max-width:768px) {
+  #nav .navbar-nav>.active>a,
+  #nav .navbar-nav>.active>a:focus {
+    background-color: transparent;
+  }
+  #nav .navbar-nav>li>a {
+    margin-top: 15px;
+  }
 }
 
 #nav .navbar-nav>.active span {
@@ -192,25 +222,68 @@ section {
 
 .slogan {
   position: absolute;
+  z-index: 100000;
   bottom: -15px;
-  padding: 10px 15px;
   left: 90px;
+  padding: 10px 15px;
   letter-spacing: -1px;
 }
 
 .jumbotron {
   height: 700px;
-  background-image: url('../img/jumbotron-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
 #homeHeader {
-  background-image: url('../img/jumbotron-bg.png');
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+#homeHeader .carousel-inner, #homeHeader .item{
+  height: 100%;
+}
+
+#homeHeader .item{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#homeHeader .item1 {
+  background-image: url('../img/jumbotron-bg1.png');
+}
+#homeHeader .item2 {
+  background-image: url('../img/jumbotron-bg2.png');
+}
+#homeHeader .item3 {
+  background-image: url('../img/jumbotron-bg3.png');
 }
 
 #homeWelcome {}
@@ -365,7 +438,7 @@ section {
 }
 
 .imgSection {
-  height: 340px;
+  /*height: 340px;*/
   width: auto;
 }
 
@@ -392,10 +465,11 @@ section {
 
 #etiquetasBody, #bordadosBody {
   height: 320px;
+  padding: 0!important;
 }
 
 .item {
-  height: 250px;
+  height: 273px;
 }
 
 .items .item.item1 {
