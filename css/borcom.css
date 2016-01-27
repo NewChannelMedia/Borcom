@@ -227,6 +227,7 @@ section {
   left: 90px;
   padding: 10px 15px;
   letter-spacing: -1px;
+  z-index: 10000;
 }
 
 .jumbotron {
