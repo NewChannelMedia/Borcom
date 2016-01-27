@@ -196,6 +196,7 @@ section {
   padding: 10px 15px;
   left: 90px;
   letter-spacing: -1px;
+  z-index: 10000;
 }
 
 .jumbotron {
