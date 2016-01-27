@@ -186,6 +186,26 @@ footer,header,hgroup,menu,nav,section {
   line-height: 2!important;
 }
 
+@media (max-width:765px) {
+  .s40,.s45,.s50,.s55,.s60,.s65,.s70,
+  .s75,.s80,.s85,.s90,.s95,.s100,
+  .s110,.s120,.s130,.s140,.s150,.s200 {
+    font-size: 35px!important;
+    line-height: 1.5!important;
+    letter-spacing: 1px!important;
+  }
+  .lh1,
+  .lh1-5,
+  .lh2 {
+    line-height: 1.2!important;
+  }
+
+  .ls-7,.ls-6,.ls-5,.ls-4,.ls-3,.ls-2,.ls-1,
+  .ls0,.ls1,.ls2,.ls3 .ls4,.ls5 {
+    letter-spacing: 1px!important;
+  }
+}
+
 .noTransform {
   text-decoration: none;
   text-transform: none;
