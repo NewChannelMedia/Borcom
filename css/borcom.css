@@ -530,6 +530,11 @@ section {
   padding: 15px 40px;
 }
 
+#contacto {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
 
 #footer {
   position: relative;
@@ -652,4 +657,31 @@ section {
 
 .bg-yellow {
   background-color: #ffea00!important;
+}
+
+.success {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  right: 20px;
+  height: 60px;
+  padding: 0;
+  display: block;
+}
+
+.success p {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.success .close {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  z-index: 100;
+}
+
+.block3 {
+  height: auto;
+  margin-top: -18px;
 }

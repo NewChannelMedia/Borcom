@@ -1,4 +1,29 @@
 $(document).ready( function(){
+  $("#contacto #submit").click(function() {
+    var data = {
+      name: $("#form_name").val(),
+      email: $("#form_mail").val(),
+      message: $("#form_msg").val(),
+      phone: $("#form_phone").val()
+    };
+    console.log(data);
+
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: data,
+      success: function(){
+        $('.success').removeClass('hidden');
+      }
+    });
+
+    return false;
+  });
+
+  $('.success .close').click(function(){
+    $(this).parent().addClass('hidden');
+  });
+
   $('.dropdown').hover(function(){
     $(this).addClass('open');
   },
@@ -15,24 +40,3 @@ $(document).ready( function(){
     $('body').removeClass('mobile');
   }
 })
-
-
-$(function() {
-  $("#contact #submit").click(function() {
-    var name = $("#form_name").val();
-    var email = $("#form_email").val();
-    var text = $("#msg_text").val();
-    var dataString = 'name='+ name + '&email=' + email + '&text=' + text;
-
-    $.ajax({
-      type: "POST",
-      url: "send.php",
-      data: dataString,
-      success: function(){
-      $('.success').fadeIn(1000);
-      }
-    });
-
-    return false;
-  });
-});

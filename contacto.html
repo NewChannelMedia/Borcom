@@ -106,7 +106,6 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4 col-sm-offset-3 col-xs-offset-1">
-            <br><br>
             <h1 class="btn f-bold s40 text-center text-uppercase text-white bg-red center-block">contacto</h1>
           </div>
         </div>
@@ -122,20 +121,36 @@
         </div>
         <div class="row">
           <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-            <form>
+            <form method="POST">
               <div class="form-group">
                 <label class="f-book s20 text-black">Nombre:</label>
                 <input type="text" class="form-control f-med" id="form_name" name="form_name" required="">
               </div>
-              <div class="form-group">
-                <label class="f-book s20 text-black">Correo electrónico:</label>
-                <input type="email" class="form-control f-med" id="form_mail" name="form_mail" required>
+              <div class="row">
+                <div class="form-group col-lg-mg-6 col-md-6">
+                  <label class="f-book s20 text-black">Correo electrónico:</label>
+                  <input type="email" class="form-control f-med" id="form_mail" name="form_mail" required>
+                </div>
+                <div class="form-group col-lg-mg-6 col-md-6">
+                  <label class="f-book s20 text-black">Telefono:</label>
+                  <input type="text" class="form-control f-med" id="form_phone" name="form_phone" required>
+                </div>
               </div>
               <div class="form-group">
                 <label class="f-book s20 text-black">Mensaje:</label>
                 <textarea class="form-control f-med" id="form_msg" name="form_msg" rows="15" required></textarea>
               </div>
               <input type="submit" id="submit" name="submit" class="btn btn-success f-bold s20 text-uppercase bg-red text-white center-block" value="enviar">
+              <div class="success alert alert-success hidden">
+                <span class="close glyphicon glyphicon-remove"></span>
+                <div class="center-container">
+                  <div class="center-content text-center">
+                    <p class="f-book s20 text-dark">
+                      Su mensaje se ha enviado exitosamente, gracias.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
