@@ -456,17 +456,21 @@ section {
   padding: 10px 0 4px 0;
 }
 
-#etiquetas, #bordados {
+#etiquetas, #bordados, #laser {
   height: 450px;
 }
-#etiquetas .btmBrdr, #bordados .btmBrdr {
+#etiquetas .btmBrdr, #bordados .btmBrdr, #laser .btmBrdr {
   border-bottom: solid 5px #b1b1b1;
   margin-bottom: 20px;
 }
 
-#etiquetasBody, #bordadosBody {
+#etiquetasBody, #bordadosBody, #laserBody {
   height: 320px;
   padding: 0!important;
+}
+
+#laserBody {
+  margin-bottom: 90px;
 }
 
 .item {
@@ -505,6 +509,24 @@ section {
 }
 .items .item.item6 {
   background-image: url('../img/servicios_6.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.items .item.item7 {
+  background-image: url('../img/servicios_7.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.items .item.item8 {
+  background-image: url('../img/servicios_8.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.items .item.item9 {
+  background-image: url('../img/servicios_9.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
